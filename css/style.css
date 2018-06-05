@@ -1,0 +1,132 @@
+* { box-sizing: border-box; }
+
+/*-- body styling  --*/
+body {	
+    width: 100%; 
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    font-family:'Work Sans', sans-serif;
+}
+
+h1{
+  text-align: center;
+  color: #10cabf;
+  font-size: 200%;
+}
+
+.sort-filter-container{
+  width:80%;
+  display:flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.currancy-container{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  align-items: center;
+  width:80%;
+  margin: 0 auto;
+}
+
+.currancy-element{
+  display:flex;
+  flex-flow: column wrap;
+  width:25%;
+  height:auto;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #10cabf;
+  border-left: 6px solid #10cabf;
+  margin:2px;
+}
+
+.currancy-element img{
+  align-self:center;
+  width:10%;
+  height:10%;
+  margin: 2px;
+}
+.nameDiv{
+  align-self:center;
+  font-size: 100%;
+  font-weight: bold;
+  color:#15948b;
+  margin-bottom: 5px;
+}
+.currancy-element.span{
+  font-size: 100%;
+  font-weight: bold;
+  color:red;
+}
+.currancy-element > div {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding:0 10px;
+
+}
+.label{
+  font-size: 70%;
+  font-weight: bold;
+  color:#5a6968;
+}
+
+input{
+  width:100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #10cabf;
+  outline: 0;
+  color: #10cabf;
+  text-align: center;
+  font-size: 200%;
+  font-weight: bold;
+  box-shadow:1px 0px 50px lightgray;
+  margin-bottom: 10px;
+}
+
+input:hover {
+  background-color: #10cabf;
+  color: white;
+}
+
+button{
+  margin:10px;
+  border: 1px dotted #10cabf;
+  background-color: white;
+  color:#10cabf;
+  border-radius: 0 10px;
+  outline: 0;
+}
+
+button:hover{
+  border: 1px dotted #5a6968;
+  background-color: #10cabf;
+  color:white;
+}
+
+.currancy-element:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
